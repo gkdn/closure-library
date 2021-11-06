@@ -129,7 +129,7 @@ closure_js_library(
 
 closure_js_library(
     name = "testing",
-    testonly = False,
+    testonly = True,
     srcs = ["testing.js"],
     lenient = True,
     deps = [

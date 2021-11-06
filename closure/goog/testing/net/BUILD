@@ -6,6 +6,7 @@ licenses(["notice"])
 
 closure_js_library(
     name = "mockiframeio",
+    testonly = True,
     srcs = ["mockiframeio.js"],
     lenient = True,
     deps = [
@@ -21,6 +22,7 @@ closure_js_library(
 
 closure_js_library(
     name = "xhrio",
+    testonly = True,
     srcs = ["xhrio.js"],
     lenient = True,
     deps = [
@@ -45,6 +47,7 @@ closure_js_library(
 
 closure_js_library(
     name = "xhriopool",
+    testonly = True,
     srcs = ["xhriopool.js"],
     lenient = True,
     deps = [

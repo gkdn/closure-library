@@ -20,7 +20,7 @@ closure_js_library(
 
 closure_js_library(
     name = "collectablestoragetester",
-    testonly = False,
+    testonly = True,
     srcs = ["collectablestoragetester.js"],
     lenient = True,
     deps = [
@@ -88,7 +88,7 @@ closure_js_library(
 
 closure_js_library(
     name = "storagetester",
-    testonly = False,
+    testonly = True,
     srcs = ["storagetester.js"],
     lenient = True,
     deps = [

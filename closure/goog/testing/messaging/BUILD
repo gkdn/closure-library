@@ -6,6 +6,7 @@ licenses(["notice"])
 
 closure_js_library(
     name = "mockmessagechannel",
+    testonly = True,
     srcs = ["mockmessagechannel.js"],
     lenient = True,
     deps = [
@@ -17,6 +18,7 @@ closure_js_library(
 
 closure_js_library(
     name = "mockmessageevent",
+    testonly = True,
     srcs = ["mockmessageevent.js"],
     lenient = True,
     deps = [
@@ -28,6 +30,7 @@ closure_js_library(
 
 closure_js_library(
     name = "mockmessageport",
+    testonly = True,
     srcs = ["mockmessageport.js"],
     lenient = True,
     deps = [
@@ -38,6 +41,7 @@ closure_js_library(
 
 closure_js_library(
     name = "mockportnetwork",
+    testonly = True,
     srcs = ["mockportnetwork.js"],
     lenient = True,
     deps = [

@@ -6,6 +6,7 @@ licenses(["notice"])
 
 closure_js_library(
     name = "rendererasserts",
+    testonly = True,
     srcs = ["rendererasserts.js"],
     lenient = True,
     deps = [
@@ -16,6 +17,7 @@ closure_js_library(
 
 closure_js_library(
     name = "rendererharness",
+    testonly = True,
     srcs = ["rendererharness.js"],
     lenient = True,
     deps = [
@@ -30,6 +32,7 @@ closure_js_library(
 
 closure_js_library(
     name = "style",
+    testonly = True,
     srcs = ["style.js"],
     lenient = True,
     deps = [

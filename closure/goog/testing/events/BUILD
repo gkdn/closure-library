@@ -6,6 +6,7 @@ licenses(["notice"])
 
 closure_js_library(
     name = "eventobserver",
+    testonly = True,
     srcs = ["eventobserver.js"],
     lenient = True,
     deps = [
@@ -17,6 +18,7 @@ closure_js_library(
 
 closure_js_library(
     name = "events",
+    testonly = True,
     srcs = ["events.js"],
     lenient = True,
     deps = [
@@ -38,6 +40,7 @@ closure_js_library(
 
 closure_js_library(
     name = "matchers",
+    testonly = True,
     srcs = ["matchers.js"],
     lenient = True,
     deps = [
@@ -48,6 +51,7 @@ closure_js_library(
 
 closure_js_library(
     name = "onlinehandler",
+    testonly = True,
     srcs = ["onlinehandler.js"],
     lenient = True,
     deps = [

@@ -7,7 +7,7 @@ licenses(["notice"])
 closure_js_library(
     name = "browserfeature",
     srcs = ["browserfeature.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":defines",
         "//closure/goog/labs/useragent:browser",
@@ -20,7 +20,7 @@ closure_js_library(
 closure_js_library(
     name = "clicktoeditwrapper",
     srcs = ["clicktoeditwrapper.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":browserfeature",
         ":command",
@@ -40,13 +40,13 @@ closure_js_library(
 closure_js_library(
     name = "command",
     srcs = ["command.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "contenteditablefield",
     srcs = ["contenteditablefield.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":field",
         "//closure/goog/asserts",
@@ -57,7 +57,7 @@ closure_js_library(
 closure_js_library(
     name = "defines",
     srcs = ["defines.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
@@ -66,7 +66,7 @@ closure_js_library(
         "field.js",
         "plugin_impl.js",
     ],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":browserfeature",
         ":command",
@@ -109,14 +109,14 @@ closure_js_library(
 closure_js_library(
     name = "focus",
     srcs = ["focus.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = ["//closure/goog/dom:selection"],
 )
 
 closure_js_library(
     name = "icontent",
     srcs = ["icontent.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":browserfeature",
         "//closure/goog/dom",
@@ -130,7 +130,7 @@ closure_js_library(
 closure_js_library(
     name = "link",
     srcs = ["link.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":browserfeature",
         ":command",
@@ -150,7 +150,7 @@ closure_js_library(
 closure_js_library(
     name = "node",
     srcs = ["node.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/asserts:dom",
         "//closure/goog/dom",
@@ -169,7 +169,7 @@ closure_js_library(
 closure_js_library(
     name = "plugin",
     srcs = ["plugin.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":field",
         ":plugin_impl",
@@ -184,7 +184,7 @@ alias(
 closure_js_library(
     name = "range",
     srcs = ["range.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":node",
         ":style",
@@ -204,7 +204,7 @@ closure_js_library(
 closure_js_library(
     name = "seamlessfield",
     srcs = ["seamlessfield.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":browserfeature",
         ":field",
@@ -226,7 +226,7 @@ closure_js_library(
 closure_js_library(
     name = "style",
     srcs = ["style.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":browserfeature",
         "//closure/goog/array",
@@ -250,7 +250,7 @@ closure_js_library(
         "tablecell.js",
         "tablerow.js",
     ],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/asserts",
         "//closure/goog/dom",

@@ -7,7 +7,7 @@ licenses(["notice"])
 closure_js_library(
     name = "animationdelay",
     srcs = ["animationdelay.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/disposable",
         "//closure/goog/events",
@@ -18,7 +18,7 @@ closure_js_library(
 closure_js_library(
     name = "conditionaldelay",
     srcs = ["conditionaldelay.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":delay",
         "//closure/goog/disposable",
@@ -28,7 +28,7 @@ closure_js_library(
 closure_js_library(
     name = "debouncer",
     srcs = ["debouncer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/disposable",
         "//closure/goog/timer",
@@ -38,7 +38,7 @@ closure_js_library(
 closure_js_library(
     name = "delay",
     srcs = ["delay.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/disposable",
         "//closure/goog/timer",
@@ -48,7 +48,7 @@ closure_js_library(
 closure_js_library(
     name = "freelist",
     srcs = ["freelist.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
@@ -57,7 +57,7 @@ closure_js_library(
         "nexttick.js",
         "throwexception.js",
     ],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/debug:entrypointregistry",
         "//closure/goog/dom",
@@ -71,14 +71,14 @@ closure_js_library(
 closure_js_library(
     name = "promises",
     srcs = ["promises.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = ["//closure/goog/promise"],
 )
 
 closure_js_library(
     name = "run",
     srcs = ["run.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":nexttick",
         ":workqueue",
@@ -91,7 +91,7 @@ closure_js_library(
         "legacy_throttle.js",
         "throttle.js",
     ],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/disposable",
         "//closure/goog/timer",
@@ -101,7 +101,7 @@ closure_js_library(
 closure_js_library(
     name = "workqueue",
     srcs = ["workqueue.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":freelist",
         "//closure/goog/asserts",

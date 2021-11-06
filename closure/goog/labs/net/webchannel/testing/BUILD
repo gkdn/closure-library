@@ -8,7 +8,7 @@ closure_js_library(
     name = "fakewebchannel",
     testonly = True,
     srcs = ["fakewebchannel.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/array",
         "//closure/goog/events",

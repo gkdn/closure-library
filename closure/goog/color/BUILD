@@ -7,14 +7,14 @@ licenses(["notice"])
 closure_js_library(
     name = "alpha",
     srcs = ["alpha.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":color"],
 )
 
 closure_js_library(
     name = "color",
     srcs = ["color.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":names",
         "//closure/goog/math",
@@ -24,5 +24,5 @@ closure_js_library(
 closure_js_library(
     name = "names",
     srcs = ["names.js"],
-    lenient = ["True"],
+    lenient = True,
 )

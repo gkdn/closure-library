@@ -15,7 +15,7 @@ closure_js_library(
         "abstractrange.js",
         "savedrange.js",
     ],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":dom",
         ":nodetype",
@@ -30,7 +30,7 @@ closure_js_library(
 closure_js_library(
     name = "annotate",
     srcs = ["annotate.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":dom",
         ":nodetype",
@@ -46,27 +46,27 @@ closure_js_library(
 closure_js_library(
     name = "asserts",
     srcs = ["asserts.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = ["//closure/goog/asserts"],
 )
 
 closure_js_library(
     name = "attr",
     srcs = ["attr.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "browserfeature",
     srcs = ["browserfeature.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = ["//closure/goog/useragent"],
 )
 
 closure_js_library(
     name = "bufferedviewportsizemonitor",
     srcs = ["bufferedviewportsizemonitor.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":dom",
         "//closure/goog/asserts",
@@ -81,14 +81,14 @@ closure_js_library(
 closure_js_library(
     name = "classes",
     srcs = ["classes.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = ["//closure/goog/array"],
 )
 
 closure_js_library(
     name = "classlist",
     srcs = ["classlist.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = ["//closure/goog/array"],
 )
 
@@ -100,7 +100,7 @@ alias(
 closure_js_library(
     name = "dataset",
     srcs = ["dataset.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/labs/useragent:browser",
         "//closure/goog/string",
@@ -111,7 +111,7 @@ closure_js_library(
 closure_js_library(
     name = "dom",
     srcs = ["dom.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":browserfeature",
         ":nodetype",
@@ -133,7 +133,7 @@ closure_js_library(
 closure_js_library(
     name = "element",
     srcs = ["element.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":nodetype",
         ":tagname",
@@ -143,7 +143,7 @@ closure_js_library(
 closure_js_library(
     name = "fontsizemonitor",
     srcs = ["fontsizemonitor.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":dom",
         ":tagname",
@@ -158,7 +158,7 @@ closure_js_library(
 closure_js_library(
     name = "forms",
     srcs = ["forms.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":inputtype",
         ":safe",
@@ -171,20 +171,20 @@ closure_js_library(
 closure_js_library(
     name = "fullscreen",
     srcs = ["fullscreen.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":dom"],
 )
 
 closure_js_library(
     name = "htmlelement",
     srcs = ["htmlelement.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "iframe",
     srcs = ["iframe.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":dom",
         ":safe",
@@ -200,13 +200,13 @@ closure_js_library(
 closure_js_library(
     name = "inputtype",
     srcs = ["inputtype.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "iter",
     srcs = ["iter.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = ["//closure/goog/iter"],
 )
 
@@ -218,7 +218,7 @@ alias(
 closure_js_library(
     name = "nodeiterator",
     srcs = ["nodeiterator.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":tagiterator",
         "//closure/goog/iter",
@@ -228,7 +228,7 @@ closure_js_library(
 closure_js_library(
     name = "nodeoffset",
     srcs = ["nodeoffset.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":tagname",
         "//closure/goog/disposable",
@@ -238,7 +238,7 @@ closure_js_library(
 closure_js_library(
     name = "nodetype",
     srcs = ["nodetype.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
@@ -251,7 +251,7 @@ closure_js_library(
         "savedcaretrange.js",
         "textrange.js",
     ],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":abstractrange",
         ":browserfeature",
@@ -273,13 +273,13 @@ closure_js_library(
 closure_js_library(
     name = "rangeendpoint",
     srcs = ["rangeendpoint.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "safe",
     srcs = ["safe.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":asserts",
         "//closure/goog/asserts",
@@ -308,7 +308,7 @@ alias(
 closure_js_library(
     name = "selection",
     srcs = ["selection.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":inputtype",
         "//closure/goog/string",
@@ -319,7 +319,7 @@ closure_js_library(
 closure_js_library(
     name = "tagiterator",
     srcs = ["tagiterator.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":dom",
         ":nodetype",
@@ -330,21 +330,21 @@ closure_js_library(
 closure_js_library(
     name = "tagname",
     srcs = ["tagname.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":htmlelement"],
 )
 
 closure_js_library(
     name = "tags",
     srcs = ["tags.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = ["//closure/goog/object"],
 )
 
 closure_js_library(
     name = "textassert",
     srcs = ["textassert.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":dom",
         ":tagname",
@@ -360,7 +360,7 @@ alias(
 closure_js_library(
     name = "textrangeiterator",
     srcs = ["textrangeiterator.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":abstractrange",
         ":dom",
@@ -374,7 +374,7 @@ closure_js_library(
 closure_js_library(
     name = "uri",
     srcs = ["uri.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":dom",
         ":safe",
@@ -387,7 +387,7 @@ closure_js_library(
 closure_js_library(
     name = "vendor",
     srcs = ["vendor.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/string",
         "//closure/goog/useragent",
@@ -397,7 +397,7 @@ closure_js_library(
 closure_js_library(
     name = "viewportsizemonitor",
     srcs = ["viewportsizemonitor.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":dom",
         "//closure/goog/disposable",
@@ -412,7 +412,7 @@ closure_js_library(
 closure_js_library(
     name = "xml",
     srcs = ["xml.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":dom",
         ":nodetype",

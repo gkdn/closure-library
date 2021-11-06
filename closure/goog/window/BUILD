@@ -7,7 +7,7 @@ licenses(["notice"])
 closure_js_library(
     name = "window",
     srcs = ["window.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/dom",
         "//closure/goog/dom:safe",

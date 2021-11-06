@@ -7,7 +7,7 @@ licenses(["notice"])
 closure_js_library(
     name = "useragent",
     srcs = [],
-    lenient = ["True"],
+    lenient = True,
     exports = [
         ":browser",
         ":device",
@@ -21,7 +21,7 @@ closure_js_library(
 closure_js_library(
     name = "browser",
     srcs = ["browser.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":util",
         "//closure/goog/asserts",
@@ -35,14 +35,14 @@ closure_js_library(
 closure_js_library(
     name = "device",
     srcs = ["device.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":util"],
 )
 
 closure_js_library(
     name = "engine",
     srcs = ["engine.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":util",
         "//closure/goog/array",
@@ -53,7 +53,7 @@ closure_js_library(
 closure_js_library(
     name = "extra",
     srcs = ["extra.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":browser",
         ":platform",
@@ -63,7 +63,7 @@ closure_js_library(
 closure_js_library(
     name = "platform",
     srcs = ["platform.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":util",
         "//closure/goog/labs/useragent/highentropy:highentropydata",
@@ -76,14 +76,14 @@ closure_js_library(
     name = "test_agents",
     testonly = 1,
     srcs = ["test_agents.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "test_agentdata",
     testonly = 1,
     srcs = ["test_agentdata.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/array",
         "//closure/goog/debug:deepfreeze",
@@ -95,7 +95,7 @@ closure_js_library(
     srcs = [
         "testutil.js",
     ],
-    lenient = ["True"],
+    lenient = True,
     deps = [":util"],
 )
 
@@ -105,12 +105,12 @@ closure_js_library(
         "useragent.js",
         "util.js",
     ],
-    lenient = ["True"],
+    lenient = True,
     deps = ["//closure/goog/string:internal"],
 )
 
 closure_js_library(
     name = "verifier",
     srcs = ["verifier.js"],
-    lenient = ["True"],
+    lenient = True,
 )

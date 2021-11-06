@@ -7,7 +7,7 @@ licenses(["notice"])
 closure_js_library(
     name = "collectablestorage",
     srcs = ["collectablestorage.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":errorcode",
         ":expiringstorage",
@@ -22,7 +22,7 @@ closure_js_library(
     name = "collectablestoragetester",
     testonly = False,
     srcs = ["collectablestoragetester.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":collectablestorage",
         "//closure/goog/storage/mechanism:iterablemechanism",
@@ -34,7 +34,7 @@ closure_js_library(
 closure_js_library(
     name = "encryptedstorage",
     srcs = ["encryptedstorage.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":collectablestorage",
         ":errorcode",
@@ -51,13 +51,13 @@ closure_js_library(
 closure_js_library(
     name = "errorcode",
     srcs = ["errorcode.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "expiringstorage",
     srcs = ["expiringstorage.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":richstorage",
         "//closure/goog/storage/mechanism",
@@ -67,7 +67,7 @@ closure_js_library(
 closure_js_library(
     name = "richstorage",
     srcs = ["richstorage.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":errorcode",
         ":storage",
@@ -78,7 +78,7 @@ closure_js_library(
 closure_js_library(
     name = "storage",
     srcs = ["storage.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":errorcode",
         "//closure/goog/json",
@@ -90,7 +90,7 @@ closure_js_library(
     name = "storagetester",
     testonly = False,
     srcs = ["storagetester.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":storage",
         "//closure/goog/structs:map",

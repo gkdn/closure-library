@@ -8,6 +8,6 @@ closure_js_library(
     name = "asserts",
     testonly = 1,
     srcs = ["asserts.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = ["//closure/goog/testing:jsunit"],
 )

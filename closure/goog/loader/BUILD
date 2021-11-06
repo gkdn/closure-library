@@ -7,7 +7,7 @@ licenses(["notice"])
 closure_js_library(
     name = "abstractmodulemanager",
     srcs = ["abstractmodulemanager.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/html:trustedresourceurl",
         "//closure/goog/module:abstractmoduleloader",
@@ -20,7 +20,7 @@ closure_js_library(
 closure_js_library(
     name = "activemodulemanager",
     srcs = ["activemodulemanager.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":abstractmodulemanager",
         "//closure/goog/asserts",

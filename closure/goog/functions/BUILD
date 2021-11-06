@@ -7,5 +7,5 @@ licenses(["notice"])
 closure_js_library(
     name = "functions",
     srcs = ["functions.js"],
-    lenient = ["True"],
+    lenient = True,
 )

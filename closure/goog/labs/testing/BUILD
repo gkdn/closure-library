@@ -10,7 +10,7 @@ closure_js_library(
         "assertthat.js",
         "matchererror.js",
     ],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":matcher",
         "//closure/goog/debug:error",
@@ -30,7 +30,7 @@ alias(
 closure_js_library(
     name = "environment",
     srcs = ["environment.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/array",
         "//closure/goog/asserts",
@@ -47,7 +47,7 @@ closure_js_library(
 closure_js_library(
     name = "json_fuzzing",
     srcs = ["json_fuzzing.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/string",
         "//closure/goog/testing:pseudorandom",
@@ -62,7 +62,7 @@ alias(
 closure_js_library(
     name = "matcher",
     srcs = ["matcher.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
@@ -76,7 +76,7 @@ closure_js_library(
         "objectmatcher.js",
         "stringmatcher.js",
     ],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":matcher",
         "//closure/goog/array",

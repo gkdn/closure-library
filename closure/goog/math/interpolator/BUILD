@@ -7,13 +7,13 @@ licenses(["notice"])
 closure_js_library(
     name = "interpolator1",
     srcs = ["interpolator1.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "linear1",
     srcs = ["linear1.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":interpolator1",
         "//closure/goog/array",
@@ -25,7 +25,7 @@ closure_js_library(
 closure_js_library(
     name = "pchip1",
     srcs = ["pchip1.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":spline1",
         "//closure/goog/math",
@@ -35,7 +35,7 @@ closure_js_library(
 closure_js_library(
     name = "spline1",
     srcs = ["spline1.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":interpolator1",
         "//closure/goog/array",

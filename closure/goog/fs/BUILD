@@ -7,7 +7,7 @@ licenses(["notice"])
 closure_js_library(
     name = "blob",
     srcs = ["blob.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 alias(
@@ -18,7 +18,7 @@ alias(
 closure_js_library(
     name = "entryimpl",
     srcs = ["entryimpl.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":error",
         ":filesystem",
@@ -33,7 +33,7 @@ closure_js_library(
 closure_js_library(
     name = "error",
     srcs = ["error.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/asserts",
         "//closure/goog/debug:error",
@@ -45,7 +45,7 @@ closure_js_library(
 closure_js_library(
     name = "filereader",
     srcs = ["filereader.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":error",
         ":progressevent",
@@ -57,7 +57,7 @@ closure_js_library(
 closure_js_library(
     name = "filesaver",
     srcs = ["filesaver.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":error",
         ":progressevent",
@@ -71,7 +71,7 @@ closure_js_library(
         "entry.js",
         "filesystem.js",
     ],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":error",
         ":filewriter",
@@ -82,7 +82,7 @@ closure_js_library(
 closure_js_library(
     name = "filesystemimpl",
     srcs = ["filesystemimpl.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":entryimpl",
         ":filesystem",
@@ -92,7 +92,7 @@ closure_js_library(
 closure_js_library(
     name = "filewriter",
     srcs = ["filewriter.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":error",
         ":filesaver",
@@ -102,7 +102,7 @@ closure_js_library(
 closure_js_library(
     name = "fs",
     srcs = ["fs.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":error",
         ":filereader",
@@ -115,12 +115,12 @@ closure_js_library(
 closure_js_library(
     name = "progressevent",
     srcs = ["progressevent.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = ["//closure/goog/events:event"],
 )
 
 closure_js_library(
     name = "url",
     srcs = ["url.js"],
-    lenient = ["True"],
+    lenient = True,
 )

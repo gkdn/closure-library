@@ -7,7 +7,7 @@ licenses(["notice"])
 closure_js_library(
     name = "console",
     srcs = ["console.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":formatter",
         "//closure/goog/log",
@@ -17,7 +17,7 @@ closure_js_library(
 closure_js_library(
     name = "debug",
     srcs = ["debug.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":errorcontext",
         "//closure/goog/array",
@@ -28,14 +28,14 @@ closure_js_library(
 closure_js_library(
     name = "deepfreeze",
     srcs = ["deepfreeze.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":debug"],
 )
 
 closure_js_library(
     name = "debugwindow",
     srcs = ["debugwindow.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":formatter",
         "//closure/goog/dom:safe",
@@ -51,7 +51,7 @@ closure_js_library(
 closure_js_library(
     name = "divconsole",
     srcs = ["divconsole.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":formatter",
         "//closure/goog/dom",
@@ -68,26 +68,26 @@ closure_js_library(
 closure_js_library(
     name = "entrypointregistry",
     srcs = ["entrypointregistry.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = ["//closure/goog/asserts"],
 )
 
 closure_js_library(
     name = "error",
     srcs = ["error.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "errorcontext",
     srcs = ["errorcontext.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "errorhandler",
     srcs = ["errorhandler.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":entrypointregistry",
         ":error",
@@ -99,7 +99,7 @@ closure_js_library(
 closure_js_library(
     name = "errorreporter",
     srcs = ["errorreporter.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":debug",
         ":entrypointregistry",
@@ -122,7 +122,7 @@ closure_js_library(
 closure_js_library(
     name = "fancywindow",
     srcs = ["fancywindow.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":debugwindow",
         "//closure/goog/array",
@@ -143,7 +143,7 @@ closure_js_library(
 closure_js_library(
     name = "formatter",
     srcs = ["formatter.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":debug",
         ":relativetimeprovider",
@@ -158,13 +158,13 @@ closure_js_library(
 closure_js_library(
     name = "relativetimeprovider",
     srcs = ["relativetimeprovider.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "tracer",
     srcs = ["tracer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":debug",
         "//closure/goog/array",

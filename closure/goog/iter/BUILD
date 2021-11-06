@@ -7,14 +7,14 @@ licenses(["notice"])
 closure_js_library(
     name = "es6",
     srcs = ["es6.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":iter"],
 )
 
 closure_js_library(
     name = "iter",
     srcs = ["iter.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/array",
         "//closure/goog/asserts",

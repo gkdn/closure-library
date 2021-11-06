@@ -7,39 +7,39 @@ licenses(["notice"])
 closure_js_library(
     name = "countries",
     srcs = ["countries.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "defaultlocalenameconstants",
     srcs = ["defaultlocalenameconstants.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "locale",
     srcs = ["locale.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":nativenameconstants"],
 )
 
 closure_js_library(
     name = "nativenameconstants",
     srcs = ["nativenameconstants.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "scriptToLanguages",
     srcs = ["scriptToLanguages.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":locale"],
 )
 
 closure_js_library(
     name = "timezonedetection",
     srcs = ["timezonedetection.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":timezonefingerprint",
         "//closure/goog/asserts",
@@ -49,12 +49,12 @@ closure_js_library(
 closure_js_library(
     name = "timezonefingerprint",
     srcs = ["timezonefingerprint.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "timezonelist",
     srcs = ["timezonelist.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":locale"],
 )

@@ -7,7 +7,7 @@ licenses(["notice"])
 closure_js_library(
     name = "ac",
     srcs = ["ac.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":arraymatcher",
         ":autocomplete",
@@ -19,14 +19,14 @@ closure_js_library(
 closure_js_library(
     name = "arraymatcher",
     srcs = ["arraymatcher.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = ["//closure/goog/string"],
 )
 
 closure_js_library(
     name = "autocomplete",
     srcs = ["autocomplete.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":inputhandler",
         ":renderoptions",
@@ -41,7 +41,7 @@ closure_js_library(
 closure_js_library(
     name = "cachingmatcher",
     srcs = ["cachingmatcher.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":arraymatcher",
         ":renderoptions",
@@ -53,7 +53,7 @@ closure_js_library(
 closure_js_library(
     name = "inputhandler",
     srcs = ["inputhandler.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/a11y/aria",
         "//closure/goog/a11y/aria:attributes",
@@ -77,7 +77,7 @@ closure_js_library(
 closure_js_library(
     name = "remote",
     srcs = ["remote.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":autocomplete",
         ":inputhandler",
@@ -90,7 +90,7 @@ closure_js_library(
 closure_js_library(
     name = "remotearraymatcher",
     srcs = ["remotearraymatcher.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/disposable",
         "//closure/goog/events",
@@ -106,7 +106,7 @@ closure_js_library(
 closure_js_library(
     name = "renderer",
     srcs = ["renderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":autocomplete",
         "//closure/goog/a11y/aria",
@@ -135,20 +135,20 @@ closure_js_library(
 closure_js_library(
     name = "renderoptions",
     srcs = ["renderoptions.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "richinputhandler",
     srcs = ["richinputhandler.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":inputhandler"],
 )
 
 closure_js_library(
     name = "richremote",
     srcs = ["richremote.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":autocomplete",
         ":remote",
@@ -161,7 +161,7 @@ closure_js_library(
 closure_js_library(
     name = "richremotearraymatcher",
     srcs = ["richremotearraymatcher.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":remotearraymatcher",
         "//closure/goog/dom",

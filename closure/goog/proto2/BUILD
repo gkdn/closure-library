@@ -28,7 +28,7 @@ closure_js_library(
         "message.js",
         "serializer.js",
     ],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/array",
         "//closure/goog/asserts",
@@ -40,7 +40,7 @@ closure_js_library(
 closure_js_library(
     name = "objectserializer",
     srcs = ["objectserializer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":fielddescriptor",
         ":serializer",
@@ -52,7 +52,7 @@ closure_js_library(
 closure_js_library(
     name = "pbliteserializer",
     srcs = ["pbliteserializer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":fielddescriptor",
         ":lazydeserializer",
@@ -69,7 +69,7 @@ alias(
 closure_js_library(
     name = "textformatserializer",
     srcs = ["textformatserializer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":fielddescriptor",
         ":message",
@@ -85,6 +85,6 @@ closure_js_library(
 closure_js_library(
     name = "util",
     srcs = ["util.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = ["//closure/goog/asserts"],
 )

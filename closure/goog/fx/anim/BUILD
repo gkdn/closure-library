@@ -7,7 +7,7 @@ licenses(["notice"])
 closure_js_library(
     name = "anim",
     srcs = ["anim.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/async:animationdelay",
         "//closure/goog/async:delay",

@@ -7,7 +7,7 @@ licenses(["notice"])
 closure_js_library(
     name = "abstractspellchecker",
     srcs = ["abstractspellchecker.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":menuitem",
@@ -36,7 +36,7 @@ closure_js_library(
 closure_js_library(
     name = "activitymonitor",
     srcs = ["activitymonitor.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/array",
         "//closure/goog/asserts",
@@ -51,7 +51,7 @@ closure_js_library(
 closure_js_library(
     name = "advancedtooltip",
     srcs = ["advancedtooltip.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":tooltip",
         "//closure/goog/dom",
@@ -68,7 +68,7 @@ closure_js_library(
 closure_js_library(
     name = "animatedzippy",
     srcs = ["animatedzippy.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":zippy",
         "//closure/goog/a11y/aria:roles",
@@ -85,7 +85,7 @@ closure_js_library(
 closure_js_library(
     name = "attachablemenu",
     srcs = ["attachablemenu.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":itemevent",
         ":menubase",
@@ -108,7 +108,7 @@ closure_js_library(
 closure_js_library(
     name = "bidiinput",
     srcs = ["bidiinput.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         "//closure/goog/dom",
@@ -123,7 +123,7 @@ closure_js_library(
 closure_js_library(
     name = "bubble",
     srcs = ["bubble.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":popup",
@@ -146,7 +146,7 @@ closure_js_library(
 closure_js_library(
     name = "button",
     srcs = ["button.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":buttonrenderer",
         ":buttonside",
@@ -165,7 +165,7 @@ closure_js_library(
 closure_js_library(
     name = "buttonrenderer",
     srcs = ["buttonrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":buttonside",
         ":component",
@@ -180,13 +180,13 @@ closure_js_library(
 closure_js_library(
     name = "buttonside",
     srcs = ["buttonside.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "charcounter",
     srcs = ["charcounter.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/dom",
         "//closure/goog/events",
@@ -199,7 +199,7 @@ closure_js_library(
 closure_js_library(
     name = "charpicker",
     srcs = ["charpicker.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":button",
         ":component",
@@ -238,7 +238,7 @@ closure_js_library(
 closure_js_library(
     name = "checkbox",
     srcs = ["checkbox.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":checkboxrenderer",
         ":component",
@@ -257,7 +257,7 @@ closure_js_library(
 closure_js_library(
     name = "checkboxmenuitem",
     srcs = ["checkboxmenuitem.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":controlcontent",
         ":menuitem",
@@ -269,7 +269,7 @@ closure_js_library(
 closure_js_library(
     name = "checkboxrenderer",
     srcs = ["checkboxrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":control",
         ":controlrenderer",
@@ -287,7 +287,7 @@ closure_js_library(
 closure_js_library(
     name = "colormenubutton",
     srcs = ["colormenubutton.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":colormenubuttonrenderer",
         ":colorpalette",
@@ -308,7 +308,7 @@ closure_js_library(
 closure_js_library(
     name = "colormenubuttonrenderer",
     srcs = ["colormenubuttonrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":control",
         ":controlcontent",
@@ -324,7 +324,7 @@ closure_js_library(
 closure_js_library(
     name = "colorpalette",
     srcs = ["colorpalette.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":palette",
         ":paletterenderer",
@@ -339,7 +339,7 @@ closure_js_library(
 closure_js_library(
     name = "colorpicker",
     srcs = ["colorpicker.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":colorpalette",
         ":component",
@@ -352,7 +352,7 @@ closure_js_library(
 closure_js_library(
     name = "combobox",
     srcs = ["combobox.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":controlcontent",
@@ -387,7 +387,7 @@ closure_js_library(
 closure_js_library(
     name = "component",
     srcs = ["component.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":idgenerator",
         "//closure/goog/array",
@@ -405,14 +405,14 @@ closure_js_library(
 closure_js_library(
     name = "componentutil",
     srcs = ["componentutil.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = ["//closure/goog/events:eventtype"],
 )
 
 closure_js_library(
     name = "container",
     srcs = ["container.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":componentutil",
@@ -435,7 +435,7 @@ closure_js_library(
 closure_js_library(
     name = "containerrenderer",
     srcs = ["containerrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":control",
         ":registry",
@@ -454,7 +454,7 @@ closure_js_library(
 closure_js_library(
     name = "containerscroller",
     srcs = ["containerscroller.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":container",
@@ -469,7 +469,7 @@ closure_js_library(
 closure_js_library(
     name = "control",
     srcs = ["control.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":componentutil",
@@ -494,13 +494,13 @@ closure_js_library(
 closure_js_library(
     name = "controlcontent",
     srcs = ["controlcontent.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "controlrenderer",
     srcs = ["controlrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":controlcontent",
@@ -522,7 +522,7 @@ closure_js_library(
 closure_js_library(
     name = "cookieeditor",
     srcs = ["cookieeditor.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         "//closure/goog/asserts",
@@ -539,7 +539,7 @@ closure_js_library(
 closure_js_library(
     name = "css3buttonrenderer",
     srcs = ["css3buttonrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":button",
         ":buttonrenderer",
@@ -556,7 +556,7 @@ closure_js_library(
 closure_js_library(
     name = "css3menubuttonrenderer",
     srcs = ["css3menubuttonrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":controlcontent",
         ":cssnames",
@@ -571,13 +571,13 @@ closure_js_library(
 closure_js_library(
     name = "cssnames",
     srcs = ["cssnames.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "custombutton",
     srcs = ["custombutton.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":button",
         ":buttonrenderer",
@@ -591,7 +591,7 @@ closure_js_library(
 closure_js_library(
     name = "custombuttonrenderer",
     srcs = ["custombuttonrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":buttonrenderer",
         ":control",
@@ -610,7 +610,7 @@ closure_js_library(
 closure_js_library(
     name = "customcolorpalette",
     srcs = ["customcolorpalette.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":colorpalette",
         ":component",
@@ -626,7 +626,7 @@ closure_js_library(
 closure_js_library(
     name = "datepicker",
     srcs = ["datepicker.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":datepickerrenderer",
@@ -655,13 +655,13 @@ closure_js_library(
 closure_js_library(
     name = "datepickerrenderer",
     srcs = ["datepickerrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "decorate",
     srcs = ["decorate.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":registry",
@@ -671,7 +671,7 @@ closure_js_library(
 closure_js_library(
     name = "defaultdatepickerrenderer",
     srcs = ["defaultdatepickerrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":datepickerrenderer",
         "//closure/goog/dom",
@@ -682,7 +682,7 @@ closure_js_library(
 closure_js_library(
     name = "dialog",
     srcs = ["dialog.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":map",
         ":modalpopup",
@@ -712,7 +712,7 @@ closure_js_library(
 closure_js_library(
     name = "dimensionpicker",
     srcs = ["dimensionpicker.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":componentutil",
@@ -732,7 +732,7 @@ closure_js_library(
 closure_js_library(
     name = "dimensionpickerrenderer",
     srcs = ["dimensionpickerrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":controlrenderer",
         "//closure/goog/a11y/aria:announcer",
@@ -748,7 +748,7 @@ closure_js_library(
 closure_js_library(
     name = "dragdropdetector",
     srcs = ["dragdropdetector.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/dom",
         "//closure/goog/dom:inputtype",
@@ -768,7 +768,7 @@ closure_js_library(
 closure_js_library(
     name = "drilldownrow",
     srcs = ["drilldownrow.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         "//closure/goog/asserts",
@@ -784,7 +784,7 @@ closure_js_library(
 closure_js_library(
     name = "filteredmenu",
     srcs = ["filteredmenu.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":control",
@@ -812,7 +812,7 @@ closure_js_library(
 closure_js_library(
     name = "filterobservingmenuitem",
     srcs = ["filterobservingmenuitem.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":controlcontent",
         ":filterobservingmenuitemrenderer",
@@ -826,14 +826,14 @@ closure_js_library(
 closure_js_library(
     name = "filterobservingmenuitemrenderer",
     srcs = ["filterobservingmenuitemrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":menuitemrenderer"],
 )
 
 closure_js_library(
     name = "flatbuttonrenderer",
     srcs = ["flatbuttonrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":button",
         ":buttonrenderer",
@@ -850,7 +850,7 @@ closure_js_library(
 closure_js_library(
     name = "flatmenubuttonrenderer",
     srcs = ["flatmenubuttonrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":button",
         ":control",
@@ -870,7 +870,7 @@ closure_js_library(
 closure_js_library(
     name = "formpost",
     srcs = ["formpost.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         "//closure/goog/array",
@@ -885,7 +885,7 @@ closure_js_library(
 closure_js_library(
     name = "gauge",
     srcs = ["gauge.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":gaugetheme",
@@ -908,7 +908,7 @@ closure_js_library(
 closure_js_library(
     name = "gaugetheme",
     srcs = ["gaugetheme.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/graphics:lineargradient",
         "//closure/goog/graphics:solidfill",
@@ -919,7 +919,7 @@ closure_js_library(
 closure_js_library(
     name = "hovercard",
     srcs = ["hovercard.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":advancedtooltip",
         ":popupbase",
@@ -937,7 +937,7 @@ closure_js_library(
 closure_js_library(
     name = "hsvapalette",
     srcs = ["hsvapalette.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":hsvpalette",
@@ -956,7 +956,7 @@ closure_js_library(
 closure_js_library(
     name = "hsvpalette",
     srcs = ["hsvpalette.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         "//closure/goog/color",
@@ -978,13 +978,13 @@ closure_js_library(
 closure_js_library(
     name = "idgenerator",
     srcs = ["idgenerator.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "idletimer",
     srcs = ["idletimer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":activitymonitor",
         "//closure/goog/events",
@@ -998,7 +998,7 @@ closure_js_library(
 closure_js_library(
     name = "iframemask",
     srcs = ["iframemask.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/disposable",
         "//closure/goog/dom",
@@ -1013,7 +1013,7 @@ closure_js_library(
 closure_js_library(
     name = "imagelessbuttonrenderer",
     srcs = ["imagelessbuttonrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":button",
         ":component",
@@ -1030,7 +1030,7 @@ closure_js_library(
 closure_js_library(
     name = "imagelessmenubuttonrenderer",
     srcs = ["imagelessmenubuttonrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":button",
         ":controlcontent",
@@ -1047,7 +1047,7 @@ closure_js_library(
 closure_js_library(
     name = "inputdatepicker",
     srcs = ["inputdatepicker.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":datepicker",
@@ -1068,14 +1068,14 @@ closure_js_library(
 closure_js_library(
     name = "itemevent",
     srcs = ["itemevent.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = ["//closure/goog/events:event"],
 )
 
 closure_js_library(
     name = "keyboardeventdata",
     srcs = ["keyboardeventdata.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/asserts",
         "//closure/goog/events:browserevent",
@@ -1088,7 +1088,7 @@ closure_js_library(
         "keyboardshortcutevent.js",
         "keyboardshortcuthandler.js",
     ],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":keyboardeventdata",
         ":synthetickeyboardevent",
@@ -1111,7 +1111,7 @@ closure_js_library(
 closure_js_library(
     name = "labelinput",
     srcs = ["labelinput.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         "//closure/goog/a11y/aria",
@@ -1133,7 +1133,7 @@ closure_js_library(
 closure_js_library(
     name = "linkbuttonrenderer",
     srcs = ["linkbuttonrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":button",
         ":flatbuttonrenderer",
@@ -1144,13 +1144,13 @@ closure_js_library(
 closure_js_library(
     name = "map",
     srcs = ["map.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "menu",
     srcs = ["menu.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":container",
@@ -1170,7 +1170,7 @@ closure_js_library(
 closure_js_library(
     name = "menubar",
     srcs = ["menubar.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":container",
         ":containerrenderer",
@@ -1182,7 +1182,7 @@ closure_js_library(
 closure_js_library(
     name = "menubardecorator",
     srcs = ["menubardecorator.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":menubar",
         ":menubarrenderer",
@@ -1193,7 +1193,7 @@ closure_js_library(
 closure_js_library(
     name = "menubarrenderer",
     srcs = ["menubarrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":container",
         ":containerrenderer",
@@ -1204,7 +1204,7 @@ closure_js_library(
 closure_js_library(
     name = "menubase",
     srcs = ["menubase.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":popup",
         "//closure/goog/events:event",
@@ -1217,7 +1217,7 @@ closure_js_library(
 closure_js_library(
     name = "menubutton",
     srcs = ["menubutton.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":button",
         ":buttonrenderer",
@@ -1259,7 +1259,7 @@ closure_js_library(
 closure_js_library(
     name = "menubuttonrenderer",
     srcs = ["menubuttonrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":control",
         ":controlcontent",
@@ -1276,7 +1276,7 @@ closure_js_library(
 closure_js_library(
     name = "menuheader",
     srcs = ["menuheader.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":control",
@@ -1290,14 +1290,14 @@ closure_js_library(
 closure_js_library(
     name = "menuheaderrenderer",
     srcs = ["menuheaderrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":controlrenderer"],
 )
 
 closure_js_library(
     name = "menuitem",
     srcs = ["menuitem.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":control",
@@ -1317,7 +1317,7 @@ closure_js_library(
 closure_js_library(
     name = "menuitemrenderer",
     srcs = ["menuitemrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":controlcontent",
@@ -1333,7 +1333,7 @@ closure_js_library(
 closure_js_library(
     name = "menurenderer",
     srcs = ["menurenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":containerrenderer",
         ":control",
@@ -1350,7 +1350,7 @@ closure_js_library(
 closure_js_library(
     name = "menuseparator",
     srcs = ["menuseparator.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":menuseparatorrenderer",
         ":registry",
@@ -1362,7 +1362,7 @@ closure_js_library(
 closure_js_library(
     name = "menuseparatorrenderer",
     srcs = ["menuseparatorrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":controlcontent",
         ":controlrenderer",
@@ -1375,7 +1375,7 @@ closure_js_library(
 closure_js_library(
     name = "mockactivitymonitor",
     srcs = ["mockactivitymonitor.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":activitymonitor",
         "//closure/goog/events:eventtype",
@@ -1385,7 +1385,7 @@ closure_js_library(
 closure_js_library(
     name = "modalariavisibilityhelper",
     srcs = ["modalariavisibilityhelper.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/a11y/aria",
         "//closure/goog/a11y/aria:attributes",
@@ -1396,7 +1396,7 @@ closure_js_library(
 closure_js_library(
     name = "modalpopup",
     srcs = ["modalpopup.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":modalariavisibilityhelper",
@@ -1423,7 +1423,7 @@ closure_js_library(
 closure_js_library(
     name = "nativebuttonrenderer",
     srcs = ["nativebuttonrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":buttonrenderer",
         ":component",
@@ -1438,7 +1438,7 @@ closure_js_library(
 closure_js_library(
     name = "option",
     srcs = ["option.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":controlcontent",
@@ -1452,7 +1452,7 @@ closure_js_library(
 closure_js_library(
     name = "palette",
     srcs = ["palette.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":control",
@@ -1476,7 +1476,7 @@ closure_js_library(
 closure_js_library(
     name = "paletterenderer",
     srcs = ["paletterenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":controlcontent",
         ":controlrenderer",
@@ -1501,7 +1501,7 @@ closure_js_library(
 closure_js_library(
     name = "plaintextspellchecker",
     srcs = ["plaintextspellchecker.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":abstractspellchecker",
         ":component",
@@ -1527,7 +1527,7 @@ closure_js_library(
 closure_js_library(
     name = "popup",
     srcs = ["popup.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":popupbase",
         "//closure/goog/math:box",
@@ -1540,7 +1540,7 @@ closure_js_library(
 closure_js_library(
     name = "popupbase",
     srcs = ["popupbase.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/array",
         "//closure/goog/disposable",
@@ -1562,7 +1562,7 @@ closure_js_library(
 closure_js_library(
     name = "popupcolorpicker",
     srcs = ["popupcolorpicker.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":colorpicker",
         ":component",
@@ -1582,7 +1582,7 @@ closure_js_library(
 closure_js_library(
     name = "popupdatepicker",
     srcs = ["popupdatepicker.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":datepicker",
@@ -1601,7 +1601,7 @@ closure_js_library(
 closure_js_library(
     name = "popupmenu",
     srcs = ["popupmenu.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":menu",
@@ -1627,7 +1627,7 @@ closure_js_library(
 closure_js_library(
     name = "progressbar",
     srcs = ["progressbar.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":rangemodel",
@@ -1646,7 +1646,7 @@ closure_js_library(
 closure_js_library(
     name = "prompt",
     srcs = ["prompt.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":dialog",
@@ -1665,7 +1665,7 @@ closure_js_library(
 closure_js_library(
     name = "rangemodel",
     srcs = ["rangemodel.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         "//closure/goog/events:eventtarget",
@@ -1675,7 +1675,7 @@ closure_js_library(
 closure_js_library(
     name = "ratings",
     srcs = ["ratings.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         "//closure/goog/a11y/aria",
@@ -1693,7 +1693,7 @@ closure_js_library(
 closure_js_library(
     name = "registry",
     srcs = ["registry.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":controlrenderer",
@@ -1706,7 +1706,7 @@ closure_js_library(
 closure_js_library(
     name = "richtextspellchecker",
     srcs = ["richtextspellchecker.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":abstractspellchecker",
         ":component",
@@ -1732,7 +1732,7 @@ closure_js_library(
 closure_js_library(
     name = "roundedpanel",
     srcs = ["roundedpanel.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         "//closure/goog/asserts",
@@ -1754,7 +1754,7 @@ closure_js_library(
 closure_js_library(
     name = "roundedtabrenderer",
     srcs = ["roundedtabrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":control",
         ":controlcontent",
@@ -1770,7 +1770,7 @@ closure_js_library(
 closure_js_library(
     name = "scrollfloater",
     srcs = ["scrollfloater.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         "//closure/goog/array",
@@ -1789,7 +1789,7 @@ closure_js_library(
 closure_js_library(
     name = "select",
     srcs = ["select.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":buttonrenderer",
         ":component",
@@ -1816,7 +1816,7 @@ closure_js_library(
 closure_js_library(
     name = "selectionmenubutton",
     srcs = ["selectionmenubutton.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":buttonrenderer",
         ":component",
@@ -1837,7 +1837,7 @@ closure_js_library(
 closure_js_library(
     name = "selectionmodel",
     srcs = ["selectionmodel.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/array",
         "//closure/goog/events:eventtarget",
@@ -1848,7 +1848,7 @@ closure_js_library(
 closure_js_library(
     name = "separator",
     srcs = ["separator.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":control",
@@ -1863,7 +1863,7 @@ closure_js_library(
 closure_js_library(
     name = "serverchart",
     srcs = ["serverchart.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         "//closure/goog/array",
@@ -1880,7 +1880,7 @@ closure_js_library(
 closure_js_library(
     name = "slider",
     srcs = ["slider.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":sliderbase",
         "//closure/goog/a11y/aria",
@@ -1893,7 +1893,7 @@ closure_js_library(
 closure_js_library(
     name = "sliderbase",
     srcs = ["sliderbase.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":rangemodel",
@@ -1930,7 +1930,7 @@ closure_js_library(
 closure_js_library(
     name = "splitpane",
     srcs = ["splitpane.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         "//closure/goog/asserts",
@@ -1951,7 +1951,7 @@ closure_js_library(
 closure_js_library(
     name = "submenu",
     srcs = ["submenu.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":controlcontent",
@@ -1979,7 +1979,7 @@ closure_js_library(
 closure_js_library(
     name = "submenurenderer",
     srcs = ["submenurenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":control",
         ":controlcontent",
@@ -1998,7 +1998,7 @@ closure_js_library(
 closure_js_library(
     name = "synthetickeyboardevent",
     srcs = ["synthetickeyboardevent.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":keyboardeventdata",
         "//closure/goog/events:event",
@@ -2008,7 +2008,7 @@ closure_js_library(
 closure_js_library(
     name = "tab",
     srcs = ["tab.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":control",
@@ -2022,7 +2022,7 @@ closure_js_library(
 closure_js_library(
     name = "tabbar",
     srcs = ["tabbar.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":container",
@@ -2038,7 +2038,7 @@ closure_js_library(
 closure_js_library(
     name = "tabbarrenderer",
     srcs = ["tabbarrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":container",
         ":containerrenderer",
@@ -2050,7 +2050,7 @@ closure_js_library(
 closure_js_library(
     name = "tablesorter",
     srcs = ["tablesorter.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         "//closure/goog/array",
@@ -2066,7 +2066,7 @@ closure_js_library(
 closure_js_library(
     name = "tabpane",
     srcs = ["tabpane.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/asserts",
         "//closure/goog/dom",
@@ -2086,7 +2086,7 @@ closure_js_library(
 closure_js_library(
     name = "tabrenderer",
     srcs = ["tabrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":controlrenderer",
@@ -2097,7 +2097,7 @@ closure_js_library(
 closure_js_library(
     name = "textarea",
     srcs = ["textarea.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":control",
         ":textarearenderer",
@@ -2116,7 +2116,7 @@ closure_js_library(
 closure_js_library(
     name = "textarearenderer",
     srcs = ["textarearenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":controlrenderer",
@@ -2127,7 +2127,7 @@ closure_js_library(
 closure_js_library(
     name = "togglebutton",
     srcs = ["togglebutton.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":button",
         ":buttonrenderer",
@@ -2142,7 +2142,7 @@ closure_js_library(
 closure_js_library(
     name = "toolbar",
     srcs = ["toolbar.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":container",
         ":toolbarrenderer",
@@ -2153,7 +2153,7 @@ closure_js_library(
 closure_js_library(
     name = "toolbarbutton",
     srcs = ["toolbarbutton.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":button",
         ":buttonrenderer",
@@ -2167,14 +2167,14 @@ closure_js_library(
 closure_js_library(
     name = "toolbarbuttonrenderer",
     srcs = ["toolbarbuttonrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":custombuttonrenderer"],
 )
 
 closure_js_library(
     name = "toolbarcolormenubutton",
     srcs = ["toolbarcolormenubutton.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":colormenubutton",
         ":colormenubuttonrenderer",
@@ -2189,7 +2189,7 @@ closure_js_library(
 closure_js_library(
     name = "toolbarcolormenubuttonrenderer",
     srcs = ["toolbarcolormenubuttonrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":colormenubuttonrenderer",
         ":control",
@@ -2205,7 +2205,7 @@ closure_js_library(
 closure_js_library(
     name = "toolbarmenubutton",
     srcs = ["toolbarmenubutton.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":buttonrenderer",
         ":controlcontent",
@@ -2220,14 +2220,14 @@ closure_js_library(
 closure_js_library(
     name = "toolbarmenubuttonrenderer",
     srcs = ["toolbarmenubuttonrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":menubuttonrenderer"],
 )
 
 closure_js_library(
     name = "toolbarrenderer",
     srcs = ["toolbarrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":container",
         ":containerrenderer",
@@ -2242,7 +2242,7 @@ closure_js_library(
 closure_js_library(
     name = "toolbarselect",
     srcs = ["toolbarselect.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":controlcontent",
         ":menu",
@@ -2257,7 +2257,7 @@ closure_js_library(
 closure_js_library(
     name = "toolbarseparator",
     srcs = ["toolbarseparator.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":registry",
         ":separator",
@@ -2269,7 +2269,7 @@ closure_js_library(
 closure_js_library(
     name = "toolbarseparatorrenderer",
     srcs = ["toolbarseparatorrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":cssnames",
         ":menuseparatorrenderer",
@@ -2282,7 +2282,7 @@ closure_js_library(
 closure_js_library(
     name = "toolbartogglebutton",
     srcs = ["toolbartogglebutton.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":controlcontent",
         ":registry",
@@ -2295,7 +2295,7 @@ closure_js_library(
 closure_js_library(
     name = "tooltip",
     srcs = ["tooltip.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":popup",
         ":popupbase",
@@ -2325,7 +2325,7 @@ closure_js_library(
 closure_js_library(
     name = "tristatemenuitem",
     srcs = ["tristatemenuitem.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":component",
         ":controlcontent",
@@ -2341,7 +2341,7 @@ closure_js_library(
 closure_js_library(
     name = "tristatemenuitemrenderer",
     srcs = ["tristatemenuitemrenderer.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":menuitemrenderer",
         "//closure/goog/asserts",
@@ -2352,7 +2352,7 @@ closure_js_library(
 closure_js_library(
     name = "twothumbslider",
     srcs = ["twothumbslider.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":sliderbase",
         "//closure/goog/a11y/aria",
@@ -2365,7 +2365,7 @@ closure_js_library(
 closure_js_library(
     name = "zippy",
     srcs = ["zippy.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/a11y/aria",
         "//closure/goog/a11y/aria:attributes",

@@ -7,7 +7,7 @@ licenses(["notice"])
 closure_js_library(
     name = "entries",
     srcs = ["entries.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/array",
         "//closure/goog/asserts",
@@ -19,7 +19,7 @@ closure_js_library(
 closure_js_library(
     name = "registry",
     srcs = ["registry.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":entries",
         "//closure/goog/array",
@@ -34,7 +34,7 @@ closure_js_library(
     name = "testhelpers",
     testonly = 1,
     srcs = ["testhelpers.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":entries",
         ":registry",
@@ -45,7 +45,7 @@ closure_js_library(
 closure_js_library(
     name = "tweak",
     srcs = ["tweak.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":entries",
         ":registry",
@@ -56,7 +56,7 @@ closure_js_library(
 closure_js_library(
     name = "tweakui",
     srcs = ["tweakui.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":entries",
         ":registry",

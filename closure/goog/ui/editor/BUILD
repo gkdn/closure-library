@@ -7,7 +7,7 @@ licenses(["notice"])
 closure_js_library(
     name = "abstractdialog",
     srcs = ["abstractdialog.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/asserts",
         "//closure/goog/dom",
@@ -23,7 +23,7 @@ closure_js_library(
 closure_js_library(
     name = "bubble",
     srcs = ["bubble.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/asserts",
         "//closure/goog/dom",
@@ -52,7 +52,7 @@ closure_js_library(
 closure_js_library(
     name = "defaulttoolbar",
     srcs = ["defaulttoolbar.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":messages",
         ":toolbarfactory",
@@ -79,7 +79,7 @@ closure_js_library(
 closure_js_library(
     name = "linkdialog",
     srcs = ["linkdialog.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":abstractdialog",
         ":messages",
@@ -113,7 +113,7 @@ closure_js_library(
 closure_js_library(
     name = "messages",
     srcs = ["messages.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/html:safehtml",
         "//closure/goog/html:safehtmlformatter",
@@ -123,7 +123,7 @@ closure_js_library(
 closure_js_library(
     name = "tabpane",
     srcs = ["tabpane.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/asserts",
         "//closure/goog/dom",
@@ -144,7 +144,7 @@ closure_js_library(
 closure_js_library(
     name = "toolbarcontroller",
     srcs = ["toolbarcontroller.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/editor:field",
         "//closure/goog/events:event",
@@ -157,7 +157,7 @@ closure_js_library(
 closure_js_library(
     name = "toolbarfactory",
     srcs = ["toolbarfactory.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/array",
         "//closure/goog/dom",

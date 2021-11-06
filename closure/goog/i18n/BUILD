@@ -7,13 +7,13 @@ licenses(["notice"])
 closure_js_library(
     name = "bidi",
     srcs = ["bidi.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "bidiformatter",
     srcs = ["bidiformatter.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":bidi",
         "//closure/goog/html:safehtml",
@@ -23,7 +23,7 @@ closure_js_library(
 closure_js_library(
     name = "charlistdecompressor",
     srcs = ["charlistdecompressor.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":uchar",
         "//closure/goog/array",
@@ -33,44 +33,44 @@ closure_js_library(
 closure_js_library(
     name = "charpickerdata",
     srcs = ["charpickerdata.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "collation",
     srcs = ["collation.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "compactnumberformatsymbols",
     srcs = ["compactnumberformatsymbols.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "compactnumberformatsymbolsext",
     srcs = ["compactnumberformatsymbolsext.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":compactnumberformatsymbols"],
 )
 
 closure_js_library(
     name = "currency",
     srcs = ["currency.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "currencycodemap",
     srcs = ["currencycodemap.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "dateintervalformat",
     srcs = ["dateintervalformat.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":dateintervalsymbols",
         ":datetimeformat",
@@ -88,34 +88,34 @@ closure_js_library(
 closure_js_library(
     name = "dateintervalpatterns",
     srcs = ["dateintervalpatterns.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":dateintervalsymbols"],
 )
 
 closure_js_library(
     name = "dateintervalpatternsext",
     srcs = ["dateintervalpatternsext.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":dateintervalpatterns"],
 )
 
 closure_js_library(
     name = "dateintervalsymbols",
     srcs = ["dateintervalsymbols.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "dateintervalsymbolsext",
     srcs = ["dateintervalsymbolsext.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":dateintervalsymbols"],
 )
 
 closure_js_library(
     name = "datetimeformat",
     srcs = ["datetimeformat.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":datetimepatterns",
         ":datetimesymbols",
@@ -133,7 +133,7 @@ closure_js_library(
 closure_js_library(
     name = "datetimeparse",
     srcs = ["datetimeparse.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":datetimeformat",
         ":datetimesymbols",
@@ -145,40 +145,40 @@ closure_js_library(
 closure_js_library(
     name = "datetimepatternstype",
     srcs = ["datetimepatternstype.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "datetimepatterns",
     srcs = ["datetimepatterns.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":datetimepatternstype"],
 )
 
 closure_js_library(
     name = "datetimepatternsext",
     srcs = ["datetimepatternsext.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":datetimepatterns"],
 )
 
 closure_js_library(
     name = "datetimesymbols",
     srcs = ["datetimesymbols.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "datetimesymbolsext",
     srcs = ["datetimesymbolsext.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":datetimesymbols"],
 )
 
 closure_js_library(
     name = "graphemebreak",
     srcs = ["graphemebreak.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":uchar",
         "//closure/goog/asserts",
@@ -189,13 +189,13 @@ closure_js_library(
 closure_js_library(
     name = "localefeature",
     srcs = ["localefeature.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "messageformat",
     srcs = ["messageformat.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":compactnumberformatsymbols",
         ":numberformat",
@@ -210,7 +210,7 @@ closure_js_library(
 closure_js_library(
     name = "mime",
     srcs = ["mime.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":uchar",
         "//closure/goog/array",
@@ -220,13 +220,13 @@ closure_js_library(
 closure_js_library(
     name = "nativelocaledigits",
     srcs = ["nativelocaledigits.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "numberformat",
     srcs = ["numberformat.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":compactnumberformatsymbols",
         ":currency",
@@ -245,34 +245,34 @@ closure_js_library(
         "numberformatsymbols.js",
         "numberformatsymbolstype.js",
     ],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "numberformatsymbolsext",
     srcs = ["numberformatsymbolsext.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":numberformatsymbols"],
 )
 
 closure_js_library(
     name = "ordinalrules",
     srcs = ["ordinalrules.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":localefeature"],
 )
 
 closure_js_library(
     name = "pluralrules",
     srcs = ["pluralrules.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":localefeature"],
 )
 
 closure_js_library(
     name = "relativedatetimeformat",
     srcs = ["relativedatetimeformat.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         ":localefeature",
         ":messageformat",
@@ -284,20 +284,20 @@ closure_js_library(
 closure_js_library(
     name = "relativedatetimesymbols",
     srcs = ["relativedatetimesymbols.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "relativedatetimesymbolsext",
     srcs = ["relativedatetimesymbolsext.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":relativedatetimesymbols"],
 )
 
 closure_js_library(
     name = "timezone",
     srcs = ["timezone.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [
         "//closure/goog/array",
         "//closure/goog/date:datelike",
@@ -309,12 +309,12 @@ closure_js_library(
 closure_js_library(
     name = "uchar",
     srcs = ["uchar.js"],
-    lenient = ["True"],
+    lenient = True,
 )
 
 closure_js_library(
     name = "ucharnames",
     srcs = ["ucharnames.js"],
-    lenient = ["True"],
+    lenient = True,
     deps = [":uchar"],
 )

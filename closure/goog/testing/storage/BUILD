@@ -8,6 +8,7 @@ closure_js_library(
     name = "fakemechanism",
     testonly = False,
     srcs = ["fakemechanism.js"],
+    lenient = ["True"],
     deps = [
         "//closure/goog/iter",
         "//closure/goog/iter:es6",

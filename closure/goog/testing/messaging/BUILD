@@ -7,6 +7,7 @@ licenses(["notice"])
 closure_js_library(
     name = "mockmessagechannel",
     srcs = ["mockmessagechannel.js"],
+    lenient = ["True"],
     deps = [
         "//closure/goog/messaging:abstractchannel",
         "//closure/goog/testing:asserts",
@@ -17,6 +18,7 @@ closure_js_library(
 closure_js_library(
     name = "mockmessageevent",
     srcs = ["mockmessageevent.js"],
+    lenient = ["True"],
     deps = [
         "//closure/goog/events:browserevent",
         "//closure/goog/events:eventtype",
@@ -27,6 +29,7 @@ closure_js_library(
 closure_js_library(
     name = "mockmessageport",
     srcs = ["mockmessageport.js"],
+    lenient = ["True"],
     deps = [
         "//closure/goog/events:eventtarget",
         "//closure/goog/testing:mockcontrol",
@@ -36,6 +39,7 @@ closure_js_library(
 closure_js_library(
     name = "mockportnetwork",
     srcs = ["mockportnetwork.js"],
+    lenient = ["True"],
     deps = [
         ":mockmessagechannel",
         "//closure/goog/messaging:portnetwork",

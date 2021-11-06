@@ -6,6 +6,7 @@ licenses(["notice"])
 
 closure_js_library(
     name = "assertthat",
+    testonly = True,
     srcs = [
         "assertthat.js",
         "matchererror.js",
@@ -29,6 +30,7 @@ alias(
 
 closure_js_library(
     name = "environment",
+    testonly = True,
     srcs = ["environment.js"],
     lenient = True,
     deps = [
@@ -46,6 +48,7 @@ closure_js_library(
 
 closure_js_library(
     name = "json_fuzzing",
+    testonly = True,
     srcs = ["json_fuzzing.js"],
     lenient = True,
     deps = [
@@ -61,12 +64,14 @@ alias(
 
 closure_js_library(
     name = "matcher",
+    testonly = True,
     srcs = ["matcher.js"],
     lenient = True,
 )
 
 closure_js_library(
     name = "matchers",
+    testonly = True,
     srcs = [
         "decoratormatcher.js",
         "dictionarymatcher.js",
